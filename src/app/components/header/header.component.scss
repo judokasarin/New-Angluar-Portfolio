@@ -15,11 +15,11 @@ a:hover {
 
 li {
     display: inline;
-    margin: 0 44px;
+    margin-right: 44px;
 }
 
 li:hover {
-    margin: 0 44px;
+    margin-right: 44px;
     cursor: pointer;
 }
 
@@ -28,21 +28,29 @@ li:hover {
   text-decoration-line: underline;
 }
 
-.navigation{
-  width: 100%;
-  height: 68px;
+.nav-container{
   display: flex;
-  list-style: none;
-  padding: 0%;  
-  margin-top: 99px;
-  justify-content: center;
-  align-items:baseline;
+  height: 68px;
+  align-items: center;
   margin-bottom: 150px;
+  margin-top: 99px;
+  margin-left: 172px;
+  margin-right: 172px;
+}
+
+.navigation{
+  display: flex;
+  flex-wrap:wrap;
+  list-style: none;
+  padding: 0;  
+  justify-content: center;
+  
 }
 
 .nav-title{
-  flex: 123px 0 0;
-  padding-left: 172px;
+  flex: 123px 0 1;
+  margin-left:44px;
+  
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -51,8 +59,4 @@ li:hover {
 
 .spacer{
   flex-grow: 1;
-}
-
-.last-nav-element{
-  padding-right: 172px;
 }
