@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule, routes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContainerLayoutComponent } from './components/container-layout/container-layout.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ContainerLayoutComponent } from './components/container-layout/containe
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
-    ContainerLayoutComponent
+    ContainerLayoutComponent,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
